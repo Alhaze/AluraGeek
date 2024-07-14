@@ -1,0 +1,165 @@
+html {
+    box-sizing: border-box;
+}
+
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.subtitle__styles {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+header {
+    display: block;
+    text-align: center;
+    background-color: #5300C8;
+    padding: 2rem 0;
+    color: white;
+    margin-bottom: 4rem;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #E5E5E5;
+    font-weight: 300;
+}
+
+/* PRODUCT FORM */
+
+.product__form {
+    margin-bottom: 4rem;
+}
+
+.product__form form {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+.product__form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    border: 3px #03318C solid;
+    padding: 1rem 1rem;
+    border-radius: 25px;
+}
+
+.product__form input::placeholder {
+    color: #03318C;
+    font-size: .7rem;
+} 
+
+.form__actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.form__action {
+    flex: 1;
+    padding: 1.3rem 0;
+    background: transparent;
+    outline: none;
+    border: 3px solid #03318C;
+    border-radius: 15px;
+    color: #03318C;
+    cursor: pointer;
+}
+
+.form__action-main {
+    background-color: #03318C;
+    color: white;
+}
+
+/* MY PRODUCTS */
+
+.products__main {
+    margin-bottom: 2rem;
+}
+
+.products__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 90%;
+    margin:  0 auto;
+}
+
+.products__card {
+    border: 2px solid black;
+    padding: .6rem;
+    border-radius: 10px;
+    background-color: #5D04D9;
+    color: white;
+}
+
+.card__image {
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+
+}
+
+
+
+.card__image img {
+    max-width: 100%;
+    object-fit: center;
+}
+
+
+.products__card h3 {
+    font-size: .8rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__footer p {
+    font-size: .7rem;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #5300C8;
+    padding: 3rem 0;
+    color: white;
+    text-align: center;
+}
+
+.footer h2 {
+    margin-bottom: .6rem;
+}
+
+.footer p {
+    font-size: .6rem;
+}
+
+.footer span {
+    font-size: 2rem;
+}
+
+@media (min-width: 1000px) {
+    /* PRODUCTS */
+    .product__form form {
+        max-width: 600px;
+    }
+
+    .products__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

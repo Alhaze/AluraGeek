@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header class="header">
+        <h1>AluraGeek</h1>
+    </header>
+
+    <section class="product__form">
+        <h2 class="subtitle__styles">Agregar  <br> producto:</h2>
+        <form id="form" action="#">
+            <input type="text" id="name_input" required name="name" placeholder="nombre...">
+            <input type="number" step=".01" id="price_input" required name="price" placeholder="precio...">
+            <input type="text" id="image_input" required name="image" placeholder="imagen...">
+            <div class="form__actions">
+                <button class="form__action form__action-main">Enviar</button>
+                <button id="reset_button" type="button" class="form__action">Limpiar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="products__main">
+        <h2 class="subtitle__styles">mis productos</h2>
+
+        <div id="products" class="products__grid"> 
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h2>AluraGeek</h2>
+        <p>Desarrollado por Alejandra <span>💅</span></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
